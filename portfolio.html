@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Site heading-->
+    <header class="page-header">
+      <div class="header-container container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo"
+            ><span class="accent-logo">Web</span>Studio</a
+          >
+          <ul class="nav-list list">
+            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-nav list">
+          <li class="item">
+            <a class="contact-link link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a class="contact-link link" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Our works -->
+      <section class="section">
+        <div class="container">
+          <!-- Заголовок нужно скрыть -->
+          <h1 class="works-title visually-hidden">Наши работы</h1>
+          <!-- Кнопки фильтра -->
+
+          <ul class="buttons-list list">
+            <li class="button-item">
+              <button type="button" class="button">Все</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Gallery -->
+
+          <ul class="gallery-items list">
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                  <img
+                    src="./images/title1.jpg"
+                    alt="фото людей на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="item-description">
+                  <h3 class="title">Технокряк</h3>
+                  <p class="gallery-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title2.jpg"
+                  alt="два баскетболиста с мячом"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nisi illum consequatur obcaecati sapiente amet!
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                  <p class="gallery-text">Дизайн</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title3.jpg"
+                  alt="логотип ресторана с морепродуками"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ab.
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Ресторан Seafood</h3>
+                  <p class="gallery-text">Приложение</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title3.jpg"
+                  alt="логотип ресторана с морепродуками"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ab.
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Ресторан Seafood</h3>
+                  <p class="gallery-text">Приложение</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title3.jpg"
+                  alt="логотип ресторана с морепродуками"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ab.
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Ресторан Seafood</h3>
+                  <p class="gallery-text">Приложение</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title6.jpg"
+                  alt="фото монитора"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid dolorem at inventore fuga deleniti.
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Inspiration has no Borders</h3>
+                  <p class="gallery-text">Веб-сайт</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title7.jpg"
+                  alt="разворот журнала"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, a.
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Издание Limited Edition</h3>
+                  <p class="gallery-text">Дизайн</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title8.jpg"
+                  alt="фото бирки"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facere nobis omnis aperiam quas quasi.
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Проект LAB</h3>
+                  <p class="gallery-text">Маркетинг</p>
+                </div>
+                
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-link" href="#">
+                <div class="gallery-image-thumb">
+                <img
+                  src="./images/title9.jpg"
+                  alt="человек работает за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <div class="hover-overlay">
+                    <p class="item-description-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corrupti ullam!
+                    </p>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <h3 class="title">Growing Business</h3>
+                  <p class="gallery-text">Приложение</p>
+                </div>
+                
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="container-address">
+          <a href="./index.html" class="logo-light"
+            ><span class="accent-logo">Web</span>Studio</a
+          >
+          <ul class="footer-contacts list">
+            <li class="footer-item">
+              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+            </li>
+            <li class="footer-item">
+              <a href="mailto:info@devstudio.com" class="footer-contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380961111111" class="footer-contact"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container-social-list">
+          <h3 class="social-list-title title">присоединяйтесь</h3>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-footer-form">
+          <p class="footer-form-title">Подпишитесь на рассылку</p>
+          <form action="#" class="footer-form">
+            <input
+              type="email"
+              name="user-email"
+              class="footer-form-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="footer-form-button">
+              <span>Подписаться</span>
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
