@@ -19,10 +19,10 @@
 
 .advantages-item {
   width: 270px;
-}
 
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-icon-container {

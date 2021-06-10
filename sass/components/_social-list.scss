@@ -13,22 +13,22 @@
   border-radius: 50%;
 
   transition: background-color 250ms var(--timing-function);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--primery-bgc);
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--primery-bgc);
 
-  transition: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
+  }
 }

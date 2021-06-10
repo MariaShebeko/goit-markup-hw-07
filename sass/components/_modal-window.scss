@@ -34,9 +34,9 @@
   background-color: transparent;
 
   transition: fill 250ms var(--timing-function);
-}
 
-.close-button:hover,
-.close-button:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

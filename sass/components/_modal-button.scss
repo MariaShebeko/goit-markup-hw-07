@@ -14,9 +14,9 @@
   border-radius: 4px;
 
   transition: background-color 250ms var(--timing-function);
-}
 
-.modal-form-button:hover,
-.modal-form-button:focus {
-  background-color: var(--accent-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-hover-color);
+  }
 }

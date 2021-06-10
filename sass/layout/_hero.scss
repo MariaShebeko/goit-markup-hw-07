@@ -27,6 +27,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .main-button {
   display: inline-block;
   border-radius: 4px;
@@ -47,9 +48,9 @@
   letter-spacing: 0.06em;
 
   transition: background-color 250ms var(--timing-function);
-}
 
-.main-button:hover,
-.main-button:focus {
-  background-color: var(--accent-hover-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-hover-color);
+  }
 }
