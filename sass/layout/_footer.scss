@@ -69,8 +69,11 @@
 .social-list-footer {
   display: flex;
 }
-.footer .social-list-item:not(:last-child) {
-  margin-right: 10px;
+
+.footer .social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer .social-list-link {
@@ -122,9 +125,7 @@
 }
 
 .footer-form-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %display-center;
   width: 200px;
   height: 50px;
   margin: 0;
