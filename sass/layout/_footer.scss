@@ -16,15 +16,15 @@
 .container-address {
   margin-right: 70px;
 }
+
 .logo-light {
   display: block;
   margin-bottom: 20px;
   color: var(--primery-bgc);
 
   font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
+
+  @include font(26px, 700, 1.2);
 }
 
 .footer-item {
@@ -45,9 +45,8 @@
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font($fw: 500);
+
   letter-spacing: 0.02em;
 
   transition: color 250ms var(--timing-function);
@@ -104,15 +103,13 @@
 
   color: var(--primery-bgc);
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font();
+
   text-transform: uppercase;
 }
 
 .footer-form-input {
-  width: 358px;
-  height: 50px;
+  @include dimensions(358px, 50px);
   padding: 15px 16px;
   margin-right: 12px;
 
@@ -126,15 +123,14 @@
 
 .footer-form-button {
   @extend %display-center;
-  width: 200px;
-  height: 50px;
+  @include dimensions(200px, 50px);
   margin: 0;
   padding: 0;
   cursor: pointer;
 
   font-family: inherit;
-  
-  @include font(16px, 700, 1.87);  
+
+  @include font(16px, 700, 1.87);
 
   letter-spacing: 0.06em;
 

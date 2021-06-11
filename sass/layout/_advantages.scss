@@ -26,8 +26,8 @@
 
 .advantages-icon-container {
   @extend %display-center;
-  width: 270px;
-  height: 120px;
+
+  @include dimensions(270px, 120px);
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }

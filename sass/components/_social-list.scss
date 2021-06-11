@@ -5,8 +5,7 @@
 
 .social-list-link {
   @extend %display-center;
-  width: 44px;
-  height: 44px;
+  @include dimensions(44px, 44px);
   background-color: transparent;
   border-radius: 50%;
 
@@ -19,8 +18,7 @@
 }
 
 .social-list-icon {
-  width: 20px;
-  height: 20px;
+  @include dimensions(20px, 20px);
   fill: #afb1b8;
 
   .social-list-link:hover &,

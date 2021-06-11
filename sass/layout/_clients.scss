@@ -9,8 +9,7 @@
 
 .client-link {
   @extend %display-center;
-  width: 170px;
-  height: 92px;
+  @include dimensions(170px, 92px);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
