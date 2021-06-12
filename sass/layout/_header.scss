@@ -1,17 +1,17 @@
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
 /* =========== Стилизация логотипа =========*/
 
 .logo {
-  margin-right: 93px;
-
-  color: var(--web-color);
-
   font-family: Raleway, sans-serif;
-
   @include font(26px, 700, 1.2);
+}
+
+.header__logo {
+  margin-right: 93px;
+  color: var(--web-color);
 }
 
 .accent-logo {
@@ -20,20 +20,15 @@
 
 /* ============== Стилизация панели навигации =====*/
 
-.navigation a,
-.contacts-nav a {
-  text-decoration: none;
-}
-
-.nav-list {
+.menu {
   display: flex;
 }
 
-.nav-list .item + .item {
+.menu__item + .menu__item {
   margin-left: 50px;
 }
 
-.nav-list .link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -51,7 +46,7 @@
   }
 }
 
-.link.current {
+.menu__link.current {
   position: relative;
   color: var(--accent-color);
 
@@ -67,16 +62,16 @@
   }
 }
 
-.contacts-nav {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contacts-nav .item + .item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.contact-link {
+.contacts__link {
   display: flex;
   align-items: center;
   color: var(--primery-text-color);
@@ -93,19 +88,19 @@
 }
 
 .header-container,
-.navigation {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.contact-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: var(--primery-text-color);
 
   transition: fill 250ms var(--timing-function);
 
-  .contact-link:hover &,
-  .contact-link:focus & {
+  .contacts__link:hover &,
+  .contacts__link:focus & {
     fill: var(--accent-color);
   }
 }
