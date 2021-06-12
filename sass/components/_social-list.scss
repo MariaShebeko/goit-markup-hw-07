@@ -1,9 +1,9 @@
-.social-list {
+.social__list {
   display: flex;
   justify-content: space-between;
 }
 
-.social-list-link {
+.social__link {
   @extend %display-center;
   @include dimensions(44px, 44px);
   background-color: transparent;
@@ -17,12 +17,12 @@
   }
 }
 
-.social-list-icon {
+.social__icon {
   @include dimensions(20px, 20px);
   fill: #afb1b8;
 
-  .social-list-link:hover &,
-  .social-list-link:focus & {
+  .social__link:hover &,
+  .social__link:focus & {
     fill: var(--primery-bgc);
 
     transition: fill 250ms var(--timing-function);

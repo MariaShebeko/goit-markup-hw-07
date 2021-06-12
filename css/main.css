@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 
-.social-list-link, .close-button, .advantages__icon-container, .client-link, .footer-form-button {
+.social__link, .close-button, .advantages__icon-container, .clients__link, .footer-form__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,12 +106,12 @@ body {
   background-color: var(--accent-hover-color);
 }
 
-.social-list {
+.social__list {
   display: flex;
   justify-content: space-between;
 }
 
-.social-list-link {
+.social__link {
   width: 44px;
   height: 44px;
   background-color: transparent;
@@ -119,18 +119,18 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social-list-link:hover, .social-list-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-list-icon {
+.social__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: var(--primery-bgc);
   transition: fill 250ms var(--timing-function);
 }
@@ -576,16 +576,16 @@ body {
   text-align: center;
 }
 
-.clients-section .section-title {
+.clients__title {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
 
-.client-link {
+.clients__link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -593,17 +593,17 @@ body {
   transition: border-color 250ms var(--timing-function);
 }
 
-.client-link:hover, .client-link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
 }
 
-.client-icon {
+.clients__icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
@@ -611,10 +611,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-bgc);
-}
-
-.footer a {
-  text-decoration: none;
 }
 
 .footer-container {
@@ -636,22 +632,22 @@ body {
   line-height: 1.2;
 }
 
-.footer-item {
+.footer-contacts__item {
   margin-bottom: 9px;
 }
 
-.footer-item:last-child {
+.footer-contacts__item:last-child {
   margin-bottom: 0;
 }
 
-.address {
+.footer-contacts__address {
   color: var(--primery-bgc);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.footer-contact {
+.footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 500;
@@ -660,35 +656,35 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.footer-contact:hover, .footer-contact:focus {
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.social-list-title {
+.social__title {
   margin-bottom: 20px;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primery-bgc);
 }
 
-.social-list-footer {
+.social__list-footer {
   display: flex;
 }
 
-.footer .social-list-item:not(:last-child) {
+.footer .social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer .social-list-link {
+.footer .social__link {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
 }
 
-.footer .social-list-link:hover, .footer .social-list-link:focus {
+.footer .social__link:hover, .footer .social__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer .social-list-icon {
+.footer .social__icon {
   fill: var(--primery-bgc);
 }
 
@@ -700,7 +696,7 @@ body {
   display: flex;
 }
 
-.footer-form-title {
+.footer-form__title {
   margin-bottom: 20px;
   color: var(--primery-bgc);
   font-size: 14px;
@@ -709,7 +705,7 @@ body {
   text-transform: uppercase;
 }
 
-.footer-form-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -722,7 +718,7 @@ body {
   border-radius: 4px;
 }
 
-.footer-form-button {
+.footer-form__button {
   width: 200px;
   height: 50px;
   margin: 0;
@@ -741,11 +737,11 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.footer-form-button:hover, .footer-form-button:focus {
+.footer-form__button:hover, .footer-form__button:focus {
   background-color: var(--accent-hover-color);
 }
 
-.footer-form-icon {
+.footer-form__icon {
   margin-left: 10px;
 }
 

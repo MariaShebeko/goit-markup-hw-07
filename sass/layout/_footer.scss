@@ -4,9 +4,6 @@
 
   background-color: var(--accent-bgc);
 }
-.footer a {
-  text-decoration: none;
-}
 
 .footer-container {
   display: flex;
@@ -27,7 +24,7 @@
   @include font(26px, 700, 1.2);
 }
 
-.footer-item {
+.footer-contacts__item {
   margin-bottom: 9px;
 
   &:last-child {
@@ -35,14 +32,14 @@
   }
 }
 
-.address {
+.footer-contacts__address {
   color: var(--primery-bgc);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-contact {
+.footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
 
   @include font($fw: 500);
@@ -57,7 +54,7 @@
   }
 }
 
-.social-list-title {
+.social__title {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -65,17 +62,17 @@
   color: var(--primery-bgc);
 }
 
-.social-list-footer {
+.social__list-footer {
   display: flex;
 }
 
-.footer .social-list-item {
+.footer .social__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
-.footer .social-list-link {
+.footer .social__link {
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms var(--timing-function);
@@ -86,7 +83,7 @@
   }
 }
 
-.footer .social-list-icon {
+.footer .social__icon {
   fill: var(--primery-bgc);
 }
 
@@ -98,7 +95,7 @@
   display: flex;
 }
 
-.footer-form-title {
+.footer-form__title {
   margin-bottom: 20px;
 
   color: var(--primery-bgc);
@@ -108,7 +105,7 @@
   text-transform: uppercase;
 }
 
-.footer-form-input {
+.footer-form__input {
   @include dimensions(358px, 50px);
   padding: 15px 16px;
   margin-right: 12px;
@@ -121,7 +118,7 @@
   border-radius: 4px;
 }
 
-.footer-form-button {
+.footer-form__button {
   @extend %display-center;
   @include dimensions(200px, 50px);
   margin: 0;
@@ -148,6 +145,6 @@
   }
 }
 
-.footer-form-icon {
+.footer-form__icon {
   margin-left: 10px;
 }

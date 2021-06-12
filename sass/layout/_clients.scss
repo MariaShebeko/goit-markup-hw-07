@@ -1,13 +1,13 @@
-.clients-section .section-title {
+.clients__title {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
 
-.client-link {
+.clients__link {
   @extend %display-center;
   @include dimensions(170px, 92px);
   border: 1px solid #afb1b8;
@@ -21,13 +21,13 @@
   }
 }
 
-.client-icon {
+.clients__icon {
   fill: #afb1b8;
 
   transition: fill 250ms var(--timing-function);
 
-  .client-link:hover &,
-  .client-link:focus & {
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: var(--accent-color);
   }
 }
