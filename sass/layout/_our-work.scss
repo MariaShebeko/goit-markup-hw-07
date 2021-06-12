@@ -1,25 +1,25 @@
-.work-list {
-  display: flex;
-}
-
-.work-item + .work-item {
-  margin-left: 30px;
-}
-
-.work-item {
-  position: relative;
-  width: 370px;
-}
-
 .ourwork-section {
   padding-top: 47px;
 }
 
-.ourwork-section .section-title {
+.ourwork__list {
+  display: flex;
+}
+
+.ourwork__item + .ourwork__item {
+  margin-left: 30px;
+}
+
+.ourwork__item {
+  position: relative;
+  width: 370px;
+}
+
+.ourwork__title {
   margin-bottom: 50px;
 }
 
-.work-text {
+.ourwork__text {
   position: absolute;
   bottom: 0;
   right: 0;

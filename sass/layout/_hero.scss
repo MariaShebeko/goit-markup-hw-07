@@ -15,7 +15,7 @@
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   color: var(--primery-bgc);
@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.main-button {
+.hero__button {
   display: inline-block;
   border-radius: 4px;
   min-width: 200px;
