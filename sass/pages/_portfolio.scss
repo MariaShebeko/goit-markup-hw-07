@@ -1,11 +1,11 @@
 /* ============ Buttons (filtr) section ==========*/
 
-.buttons-list {
+.buttons__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.button-item + .button-item {
+.buttons__item + .buttons__item {
   margin-left: 8px;
 }
 
@@ -37,15 +37,16 @@
 
 /* ============ Galery section ============*/
 
-.gallery-items {
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.gallery-link {
+.gallery__link {
   display: inline-block;
 }
-.gallery-item {
+
+.gallery__item {
   width: 370px;
 
   &:hover,
@@ -62,13 +63,24 @@
   }
 }
 
-.gallery-image-thumb {
+.gallery__link {
+  color: var(--primery-text-color);
+  text-decoration: none;
+
+  &:hover .gallery__description-thumb,
+  &:focus .gallery__description-thumb {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery__image-thumb {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.hover-overlay {
+.gallery__description-thumb {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,23 +99,7 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.gallery-text {
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.gallery-link {
-  color: var(--primery-text-color);
-  text-decoration: none;
-
-  &:hover .hover-overlay,
-  &:focus .hover-overlay {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.item-description-text {
+.gallery__description {
   padding: 63px 24px;
 
   font-size: 18px;
@@ -111,17 +107,22 @@
   color: var(--primery-bgc);
 }
 
-.item-description {
+.gallery__title-thumb {
   padding: 20px 24px;
   border: 1px solid #eee;
   border-top: transparent;
 }
 
-.gallery-items .title {
+.gallery__title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
 
   @include font(18px, 700, 2);
   letter-spacing: 0.06em;
+}
+
+.gallery__text {
+  font-size: 16px;
+  line-height: 1.87;
 }
